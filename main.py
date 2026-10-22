@@ -7,7 +7,11 @@ import requests
 import telebot
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
+import telebot
+from telebot import apihelper
 
+# Настройка прокси для бесплатного тарифа PythonAnywhere
+apihelper.proxy = {'https': 'http://proxy.server:3128'}
 # ---------------- ТВОИ НАСТРОЙКИ ----------------
 BOT_TOKEN = "8695529242:AAFfGqyZ50jBbVdIAABGhWTJIr9BLJxv_FE"
 # Вставь сюда свой API-ключ с ClaudeHub (начинается на sk-...)
