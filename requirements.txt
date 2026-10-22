@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+google-auth
+requests
